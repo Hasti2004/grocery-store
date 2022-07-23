@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>grocery store list</title>
+    <link rel="stylesheet" href="grocery.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container bg-success bg-opacity-10 justify-content-center align-items-center">
+            <h1 class="text-center my-5">this is a grocery shop</h1>
+            <section class="row">
+                <div class="col-5 mx-auto">
+                    <label>grocery name</label>
+                    <input type="text" id="input-grocery">
+                    <button type="button" onclick="addToList()" class="btn btn-success">Add</button>
+                </div>
+            </section>
+            <section class="row">
+                <div class="col-5 mx-auto">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Item Name</th>
+                            </tr>
+                        </thead>
+                        <tbody id="list">
+                        </tbody>
+                    </table>
+                    <button type="button" onclick="emp()" class="btn btn-danger ">Clear</button>
+                </div>
+            </section>
+    </div>
+    <script src="./grocery.js"></script>
+</body>
